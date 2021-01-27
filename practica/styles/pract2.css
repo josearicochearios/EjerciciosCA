@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .box {
+    width: 200px;
+    height: 200px;
+    background-color: royalblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: white;
+    transition-property: background-color, color;
+    transition-duration: 1s;
+    transition-delay: 0s, 1s;
+  }
+  
+  .box:hover {
+    background-color: green;
+    color: black;
+  }

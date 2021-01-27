@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    /* animation-name: background; */
+    /* animation-duration: 5s; */
+    background-color: royalblue;
+    /* animation-fill-mode: both; */
+    /* animation-play-state: paused; */
+    /* animation-delay: 2s; */
+    /* animation-iteration-count: 3; */
+    /* animation-timing-function: steps(4); */
+  
+    animation: background 5s steps(4) 2s 3 both;
+  }
+  
+  @keyframes background {
+    0% {
+      background-color: greenyellow;
+    }
+  
+    100% {
+      background-color: red;
+    }
+  }
+  
+.box {
+    height: 200px;
+    background-color: salmon;
+    display: flex;
+    align-items: center;
+  }
+  
+  .children {
+    width: 100px;
+    height: 100px;
+    background-color: royalblue;
+    animation-name: translate;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes translate {
+    100% {
+      transform: translateX(calc(100vw - 100%));
+    }
+  }
