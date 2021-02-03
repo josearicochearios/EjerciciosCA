@@ -1,0 +1,44 @@
+.cuerpo{
+    display: grid;
+    grid-template-rows: 70px 50px 450px ;
+    grid-template-columns: minmax(10%, 1fr) 1fr 3fr minmax(10%, 1px);
+    grid-template-areas:
+        "header header header header"
+        "nav    nav    nav    nav   "
+        ".      .      .      section";
+}
+
+.cuerpo header {
+    grid-area: header;
+}
+
+header{
+    background-color: rgb(67, 67, 235);
+    font-size: 300%;
+    font-style: oblique;
+    text-align: right;
+}
+
+.cuerpo nav {
+    grid-area: nav;
+}
+
+nav{
+    background-color: red;
+}
+
+.cuerpo section {
+    grid-area: section;
+}
+
+section{
+    background-color: skyblue;
+}
+
+img{
+    display: block;
+    width: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+}
